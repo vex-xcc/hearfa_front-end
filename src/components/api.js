@@ -35,3 +35,22 @@ export const closeService = (id) => {
     })
   } 
 
+
+
+//---------------The POST Request-------------------  
+  //Add new user 
+  export const AddNewCustomer = req => {
+    return axios({
+      method: 'POST',
+      url: apiURL + '/customer/register',
+      data:{
+          FullName: req.FullName,
+          Email: req.Email,
+          Username:req.Username,
+          password: req.password,
+          Phone: req.Phone,
+          UserType: req.UserType,
+          Worker: req.Worker
+      }
+    })
+  }
