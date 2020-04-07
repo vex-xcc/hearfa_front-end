@@ -24,3 +24,14 @@ export const closeService = (id) => {
       }
     })
   }  
+
+
+//---------------The DELETE Request-------------------   
+ // delete One Service by ServiceID
+ export const deleteOneService = (id) => {
+    return axios({
+      method: 'delete',
+      url: apiURL + `/DeleteService/${id}`,
+    })
+  } 
+
