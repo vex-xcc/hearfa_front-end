@@ -54,3 +54,17 @@ export const closeService = (id) => {
       }
     })
   }
+    
+  //Add new Service 
+export const AddNewService = (req,id) => {
+    return axios({
+      method: 'POST',
+      url: apiURL + `/${id}`,
+      data:{
+        ServiceType: req.ServiceType,
+        ServiceDescription:  req.ServiceDescription,
+        ServiceState: "Open",
+      }
+      
+    });
+  }
