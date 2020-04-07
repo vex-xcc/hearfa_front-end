@@ -12,3 +12,15 @@ export const getAllClosedService = (id) => {
 export const userInfo = (id) =>{
     return axios.get(`${apiURL}/customer/${id}`);
   }     
+
+//---------------The PATCH Request-------------------  
+// update the ServiceState with close state
+export const closeService = (id) => {
+    return axios({
+      method: 'patch',
+      url: apiURL + `/UpdateService/${id}`,
+      data:{
+        ServiceState: 'Closed',
+      }
+    })
+  }  
