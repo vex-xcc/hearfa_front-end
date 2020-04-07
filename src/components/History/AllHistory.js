@@ -30,6 +30,24 @@ export default class AllHistory extends React.Component {
             console.log(' API error: ',error );
         })
     }
+    // Function filter and set data in History state
+    delete = (id) => {
+
+        // Mack API call to delete a service by id 
+        deleteOneService(id)
+           .then((res) => {
+
+               // Filter the set to remove the service was deleted 
+               const History = this.state.History.filter((History) => {
+                   return History._id !== id; 
+               });
+
+               Swal.fire(`The Service Deleted`,"",'success')
+               this.setState({ History});
+           })
+           .catch((err) => {
+           })
+   }
 
     render(){ 
       let AllHistory 
