@@ -8,3 +8,7 @@ import axios from 'axios';
 export const getAllClosedService = (id) => {
     return axios.get(`${apiURL}/Find/All/closed/Service/${id}`);
   }   
+// Find all User info depend on Id
+export const userInfo = (id) =>{
+    return axios.get(`${apiURL}/customer/${id}`);
+  }     
