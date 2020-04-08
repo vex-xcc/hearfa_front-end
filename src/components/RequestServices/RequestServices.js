@@ -20,7 +20,7 @@ export default class RequestServices extends React.Component {
     getRequestService(mId)
       .then((reponse) => {
         const openServiecs = reponse.data.filter((Service) => {
-          if (Service.ServiceState === "Open") {
+          if(Service.ServiceState === 'Open' || Service.ServiceState === 'Waiting') {
             return reponse.data;
           }
         });
