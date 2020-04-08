@@ -1,0 +1,378 @@
+
+.big-div{
+background-color: red;
+}
+#rock1{
+  position:absolute;
+  left:-30px;
+  top:0px;
+  width:40px;
+  height:40px;
+  transform:rotate(45deg);
+  animation:b 6s infinite;
+}
+#rock2{
+  position:absolute;
+  left:200px;
+  top:-25px;
+  width:40px;
+  height:40px;
+  transform:rotate(45deg);
+  animation:a 6s infinite;
+}
+#rock3{
+  position:absolute;
+  left:585px;
+  top:5px;
+  width:40px;
+  height:40px;
+  transform:rotate(45deg);
+  animation:a 6s infinite;
+}
+#rock4{
+  position:absolute;
+  left:385px;
+  top:90px;
+  width:40px;
+  height:40px;
+  transform:rotate(45deg);
+  animation:b 6s infinite;
+}
+#rock5{
+  position:absolute;
+  left:60px;
+  top:140px;
+  width:25px;
+  height:25px;
+  transform:rotate(45deg);
+  animation:a 6s infinite;
+}
+#rock6{
+  position:absolute;
+  left:500px;
+  top:-25px;
+  width:25px;
+  height:25px;
+  transform:rotate(45deg);
+  animation:a 6s infinite;
+}
+#rock7{
+  position:absolute;
+  left:60px;
+  top:-55px;
+  width:25px;
+  height:25px;
+  transform:rotate(45deg);
+  animation:b 6s infinite;
+}
+#rock8{
+  position:absolute;
+  left:530px;
+  top:130px;
+  width:25px;
+  height:25px;
+  transform:rotate(45deg);
+  animation:b 6s infinite;
+}
+@keyframes a{
+  0%{
+    background:transparent;
+  }
+  50%{
+    background:rgb(3, 88, 185);
+  }
+  100%{
+    background:transparent;
+  }
+}
+@keyframes b{
+  0%{
+    background:rgb(3, 88, 185);
+  }
+  50%{
+    background:transparent;
+  }
+  100%{
+    background:rgb(3, 88, 185);
+  }
+}
+#div1{
+  position:absolute;
+  left:calc(50% - 370px);
+  top:calc(20% - 140px);
+  width:790px;
+  height:130px;
+  border:20px solid rgb(60, 60, 60);
+  border-radius:100px;
+  min-width: -100px;
+}
+#diva1{
+  position:absolute;
+  width:750px;
+  height:90px;
+  border:11px solid rgb(92, 92, 92);
+  border-radius:100px;
+  background:white;
+  transition:.6s;
+}
+#img1{
+  position:absolute;
+  left:-680px;
+  top:-52px;
+  width:60px;
+  margin-right:490px;
+}
+#img2{
+  position:absolute;
+  left:10px;
+  top:10px;
+  width:50px;
+}
+#img3{
+  left:10px;
+  top:10px;
+  width:60px;
+}
+#img4{
+  position:absolute;
+  left:-60px;
+  top:-50px;
+  width:60px;
+}
+#img5{
+  left:10px;
+  top:10px;
+  width:60px;
+}
+#img6{
+  left:10px;
+  top:10px;
+  width:60px;
+}
+#divaa1{
+  position:absolute;
+  left:150px;
+  width:108px;
+  height:80px;
+  border-radius:100px;
+  transition:.6s;
+}
+#divaa1:hover{
+  height:250px;
+}
+#divaa1:hover > #divaaa1{
+  height:180px;
+  border:5px solid white;
+}
+#divaaa1{
+  position:absolute;
+  top:-5px;
+  left:75px;
+  width:40px;
+  height:80px;
+  border:5px solid white;
+  border-radius:100px;
+  background:white;
+  transition:.6s;
+}
+#divaa2{
+  position:absolute;
+  left:265px;
+  width:90px;
+  height:75px;
+  border-radius:100px;
+  transition:.6s;
+}
+
+#divaa3{
+  left:560px;
+  width:160px;
+  height:80px;
+
+  transition:.6s;
+}
+#divaa4{
+  position:absolute;
+  left:420px;
+  width:80px;
+  height:80px;
+  border-radius:100px;
+  transition:.6s;
+}
+#divaa5{
+  position:absolute;
+  left:540px;
+  width:80px;
+  height:80px;
+  border-radius:100px;
+  transition:.6s;
+}
+
+#btna1{
+  position:absolute;
+  top:0px;
+  background:transparent;
+  width:95px;
+  color:transparent;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-family:Georgia, serif;
+  font-size:15px;
+  border:2.5px solid transparent;
+  border-radius:100px;
+  cursor:pointer;
+  transition:.6s;
+}
+#divaa1:hover > #btna1{
+  top:90px;
+  color:black;
+  background:dimgrey;
+  padding-bottom:5px;
+}
+#btna2{
+  position:absolute;
+  top:0px;
+  background:transparent;
+  width:95px;
+  color:transparent;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-family:Georgia, serif;
+  font-size:15px;
+  border:2.5px solid transparent;
+  border-radius:100px;
+  cursor:pointer;
+  transition:.6s;
+}
+#divaa1:hover > #btna2{
+  top:140px;
+  color:black;
+  background:dimgrey;
+  padding-bottom:5px;
+}
+#btna3{
+  position:absolute;
+  top:0px;
+  background:transparent;
+  width:95px;
+  color:transparent;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-family:Georgia, serif;
+  font-size:15px;
+  border:2.5px solid transparent;
+  border-radius:100px;
+  cursor:pointer;
+  transition:.6s;
+}
+#divaa1:hover > #btna3{
+  top:190px;
+  color:black;
+  background:dimgrey;
+  padding-bottom:5px;
+}
+#btnb1{
+  position:absolute;
+  top:0px;
+  background:transparent;
+  width:75px;
+  color:transparent;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-family:Georgia, serif;
+  font-size:15px;
+  border:2.5px solid transparent;
+  border-radius:100px;
+  cursor:pointer;
+  transition:.6s;
+}
+#divaa2:hover > #btnb1{
+  top:90px;
+  color:black;
+  background:dimgrey;
+  padding-bottom:5px;
+}
+#btnb2{
+  position:absolute;
+  top:0px;
+  background:transparent;
+  width:75px;
+  color:transparent;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-family:Georgia, serif;
+  font-size:15px;
+  border:2.5px solid transparent;
+  border-radius:100px;
+  cursor:pointer;
+  transition:.6s;
+}
+#divaa2:hover > #btnb2{
+  top:140px;
+  color:black;
+  background:dimgrey;
+  padding-bottom:5px;
+}
+#btnc1{
+  position:absolute;
+  top:0px;
+  background:transparent;
+  width:75px;
+  color:transparent;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-family:Georgia, serif;
+  font-size:15px;
+  border:2.5px solid transparent;
+  border-radius:100px;
+  cursor:pointer;
+  transition:.6s;
+}
+#divaa3:hover > #btnc1{
+  top:90px;
+  color:black;
+  background:dimgrey;
+  padding-bottom:5px;
+}
+#btnc2{
+  position:absolute;
+  top:0px;
+  background:transparent;
+  width:75px;
+  color:transparent;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-family:Georgia, serif;
+  font-size:15px;
+  border:2.5px solid transparent;
+  border-radius:100px;
+  cursor:pointer;
+  transition:.6s;
+}
+#divaa3:hover > #btnc2{
+  top:140px;
+  color:black;
+  background:dimgrey;
+  padding-bottom:5px;
+}
+#btnc3{
+  position:absolute;
+  top:0px;
+  background:transparent;
+  width:75px;
+  color:transparent;
+  padding-top:5px;
+  padding-bottom:5px;
+  font-family:Georgia, serif;
+  font-size:15px;
+  border:2.5px solid transparent;
+  border-radius:100px;
+  cursor:pointer;
+  transition:.6s;
+}
+#divaa3:hover > #btnc3{
+  top:190px;
+  color:black;
+  background:dimgrey;
+  padding-bottom:5px;
+}
