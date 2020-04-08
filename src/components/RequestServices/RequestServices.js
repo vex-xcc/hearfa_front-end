@@ -19,7 +19,6 @@ export default class RequestServices extends React.Component {
     // Mack API call
     getRequestService(mId)
       .then((reponse) => {
-        console.log("reponse.data", reponse.data);
         const openServiecs = reponse.data.filter((Service) => {
           if (Service.ServiceState === "Open") {
             return reponse.data;
@@ -28,14 +27,12 @@ export default class RequestServices extends React.Component {
         this.setState({ cus_RequestServices: openServiecs });
       })
       .catch((error) => {
-        console.log(" API error: ", error);
       });
   }
 
   changeStateToProgressService = (id) => {
     // Make an API Call to change the state if the  service  to on Progress
     OnProgressService(id);
-    console.log(`Make an API Call to onprogress a service the ${id} `);
 
     const newList = this.state.cus_RequestServices.filter((Service) => {
       return Service._id !== id;
