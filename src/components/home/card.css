@@ -96,7 +96,7 @@
   }
   .movie_card .info_section .movie_social ul {
     list-style: none;
-    padding: 0;
+    padding-top: 60px;
   }
   .movie_card .info_section .movie_social ul li {
     display: inline-block;
@@ -184,7 +184,10 @@
     top: 13vh;
         background-color: transparent;
   }
-  
+  .priceForm{
+    padding-top: 46px;
+    padding-left: 13px;
+  }
   .priceForm > input:nth-child(1) {
     width: 56px;
     height: 18px;
@@ -261,9 +264,7 @@
   height: 22%;
 }
 
-.movie_card .info_section .movie_desc .description {
-  padding-left: 24px;
-}
+
 
 
 div.movie_card:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
