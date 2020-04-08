@@ -4,6 +4,10 @@ import axios from 'axios';
 
 //---------------The GET Request-------------------
 
+// Get ALl Customer ReceivedService By Customer ID
+export const getReceivedServices = (id) => {
+  return axios.get(`${apiURL}/customer/ReceivedService/${id}`);
+} 
 // Get all service depend on UserId and if the ServiceState is closed
 export const getAllClosedService = (id) => {
     return axios.get(`${apiURL}/Find/All/closed/Service/${id}`);
