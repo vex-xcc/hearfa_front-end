@@ -4,6 +4,10 @@ import axios from 'axios';
 
 //---------------The GET Request-------------------
 
+// Get ALl Customer RequestService By Customer ID
+export const getRequestService = (id) => {
+  return axios.get(`${apiURL}/customer/RequestService/${id}`);
+} 
 // Get ALl Customer ReceivedService By Customer ID
 export const getReceivedServices = (id) => {
   return axios.get(`${apiURL}/customer/ReceivedService/${id}`);
