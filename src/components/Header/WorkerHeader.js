@@ -57,7 +57,7 @@ export default class WorkerHeader extends React.Component {
                     alt="" />
                 </div>
                 <div id="divaa2">
-                  <Link to="/WorkerHeader/RequestServices">
+                  <Link to="/WorkerHeader/ReceivedServices">
                     <img
                       id="img3"
                       src={share}
@@ -97,7 +97,7 @@ export default class WorkerHeader extends React.Component {
         
         <Switch>
         <Route
-          path="/CustomerHeader/RequestServices"
+          path="/CustomerHeader/ReceivedServices"
          component={ReceivedServices}
         />
         <Route
