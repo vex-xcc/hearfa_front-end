@@ -21,11 +21,9 @@ export default class ReceivedServices extends React.Component {
         // Make API call 
         getReceivedServices(mId)
             .then((reponse) => {
-                console.log('reponse.data', reponse.data)
                 this.setServices(reponse.data)
             })
             .catch((error) => {
-                console.log(' API error: ', error);
             })
     }
     setServices = (Emp_ReceivedServices) => {
