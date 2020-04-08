@@ -15,7 +15,7 @@ export default class App extends React.Component {
       <>
         <BrowserRouter>
           <Switch>
-            <Route path={'/'} exact component={Login} />
+            <Route path={'/hearfa_front-end'}  component={Login} />
             <Route
               path="/register"
               render={() => <Register history={this.props.history} />}
