@@ -35,7 +35,6 @@ class Login extends Component {
         password: this.state.password
       })
       .then(res => {
-        console.warn("res", res);
         localStorage.setItem("currentUser", res.data.token);
         let jwt1 = getInfo().data.Worker;
         if (jwt1 === true) {

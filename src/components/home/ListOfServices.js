@@ -18,8 +18,6 @@ export default class ListOfServices extends Component {
         let ID = getInfo().data._id
         WorkerService(ID)
        .then( (repose)=>{
-           console.log('repose.data' , )
-
              this.setState({Service:repose.data });
        })
        .catch( (error)=>{
@@ -44,10 +42,8 @@ UpdateServiceById = (id) => {
 
 
     render(){
-        console.log(this.state.Service)
-        let Service = <h3> No Service Match you're job.. </h3>
+        let Service = <h3> </h3>
         if(this.state.Service.length > 0 ){
-            console.log("State:",this.state.Service)
             Service = this.state.Service.map((Services , index )=> {
             return(
             <WorkerHome 

@@ -24,7 +24,6 @@ AddPriceToTheSelectedService = (newPrice) => {
     // Make an axios Call to Add Price To The Selected Service 
     AddPriceToTheService(newPrice,this.props.id)
        .then((res) => {
-           console.log("you're Price has been added successfully")
        })
        .catch((err) => {
         console.log("API ERROR: ", err);
@@ -33,7 +32,6 @@ AddPriceToTheSelectedService = (newPrice) => {
 
 UpdateClick = (e) => {
   e.preventDefault();
-  console.log(`the ${this.props.id}Service  delet Click `)
   this.props.UpdateServiceById(this.props.id)
 }
 
