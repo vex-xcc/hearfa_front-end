@@ -11,25 +11,18 @@ export default class OnProgressList extends React.Component{
         }
     }
     componentDidMount(){
-        // Mack API call 
+        // Make API call 
         let mId = getInfo().data._id
-        getRequestService(mId)
+        getAllServiceInOnProgress(mId)
         .then( (reponse)=>{
-            console.log('reponse.data' , reponse.data )
-            const closeServiecs = reponse.data.filter((Service)=>{
-             if(Service.ServiceState === 'On Progress'){
-                 return reponse.data
-             }
-            });
-            this.setServices(closeServiecs)
+         
+            this.setState( {cus_RequestServices:reponse.data} );
+
         })
         .catch( (error)=>{
-            console.log(' API error: ',error );
         })
     }
-    setServices = (cus_RequestServices) =>{
-        this.setState( {cus_RequestServices} );
-      }
+ 
 
 
     closeOneSerives = (id) => {
