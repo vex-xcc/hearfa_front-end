@@ -40,6 +40,7 @@ handleSubmit = e => {
       ServicePrice:this.state.ServicePrice,
       ServicesEmp: this.state.ServicesEmp };
     e.preventDefault();
+    this.UpdateClick(e)
     this.AddPriceToTheSelectedService(addNewPrice);
 };
 togglehandler(e){
@@ -50,7 +51,8 @@ togglehandler(e){
     }
 
    render(){
-       
+       console.log(this.state.ServicePrice)
+       console.log(this.state.ServicesEmp)
         return(          
           <div className="movie_card" id="bright">
             <div className="info_section">
@@ -63,24 +65,22 @@ togglehandler(e){
                 <p className="description"> {this.props.ServiceDescription} </p>
                 <p className="buttonLable" onClick={e => this.togglehandler(e)}>click to add price </p>
               </div>
-              <div className="movie_social">    
                 <ul>
                 </ul>
                 {this.state.toggle === true ? 
-                <div className = "price">
+                <div >
                 <form onSubmit={e => this.submit(e)} className = "priceForm">
                 <input 
                  name="ServicePrice"
                  value={this.state.ServicePrice}
                  type="number"
                  onChange={e => this.change(e)}/> 
-                 <button type="submit" onClick={e=>this.UpdateClick(e)}> Add</button>
+                 <button type="submit">Add</button>
                 </form>
                 </div>
                 : ''
                   }
               </div>
-            </div>
             <div className="blur_back bright_back"></div>
           </div>
         );
