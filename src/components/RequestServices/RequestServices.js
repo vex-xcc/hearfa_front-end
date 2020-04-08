@@ -1,7 +1,6 @@
 import React from "react";
 import RequestService from "./RequestService";
 import { getRequestService, OnProgressService } from "../api";
-// import './SendTickets.css';
 import { getInfo } from "../login/decodeToken";
 export default class RequestServices extends React.Component {
   constructor(props) {
@@ -14,9 +13,9 @@ export default class RequestServices extends React.Component {
 
   componentDidMount() {
     // Take the id of curretn user
-
     let mId = getInfo().data._id;
-    // Mack API call
+
+    // Mack API call to get all Service os state Open or Waiting
     getRequestService(mId)
       .then((reponse) => {
         const openServiecs = reponse.data.filter((Service) => {
@@ -33,7 +32,6 @@ export default class RequestServices extends React.Component {
   changeStateToProgressService = (id) => {
     // Make an API Call to change the state if the  service  to on Progress
     OnProgressService(id);
-
     const newList = this.state.cus_RequestServices.filter((Service) => {
       return Service._id !== id;
     });
