@@ -97,7 +97,7 @@ export default class WorkerHeader extends React.Component {
         
         <Switch>
         <Route
-          path="/CustomerHeader/ReceivedServices"
+          path="/WorkerHeader/ReceivedServices"
          component={ReceivedServices}
         />
         <Route
