@@ -38,6 +38,31 @@ export default class Register extends Component {
             [event.target.name]: event.target.value
         });
     }
+    // Function to set data in ServiceDescription state
+    addCustomer = Customer => {
+
+        // Make an api call request to add a new user 
+        AddNewCustomer(Customer)
+            .then(response => {
+                if(response.data.success === false){
+                Swal.fire(` ${response.data.message} `,"",'error');
+            }  else if(response.data.success ===true){
+                Swal.fire(`The User ${Customer.Username} has been added successfully.`,"",'success');
+            }
+        })
+            .catch(error => {
+                    Swal.fire(`Wrong ${error}`,"",'error');
+
+                
+            });
+    };
+
+    formSubmit = e => {
+        // set the object of new user data 
+        const newCustomer = this.state;
+        e.preventDefault();
+        this.addCustomer(newCustomer);
+    };
 
     render() {
         return (
