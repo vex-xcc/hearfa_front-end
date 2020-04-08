@@ -181,11 +181,38 @@
     display: grid;
     grid-template-columns: auto auto auto;
     /* overflow: scroll; */
-    margin-top: 20vh;
-    background-color: transparent;
+    top: 13vh;
+        background-color: transparent;
   }
   
+  .priceForm > input:nth-child(1) {
+    width: 56px;
+    height: 18px;
+    position: relative;
+    font-size: 0.5em;
+    background: linear-gradient(21deg, #fff, #fbfffe);
+    padding: 3px;
+    display: inline-block;
+    border-radius: 9999em;
+    }
+    
+    .priceForm > button:nth-child(2) {
+      width: 56px;
+      height: 18px;
+      position: relative;
+      font-size: 0.5em;
+      background: linear-gradient(21deg, #fff, #fbfffe);
+      padding: 3px;
+      display: inline-block;
+      border-radius: 9999em;
+      }
 
+    .priceForm input::-webkit-outer-spin-button,
+    .priceForm input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+    .priceForm input[type=number] {
+      -moz-appearance: textfield; }
   .Price {
     padding-top: 8px;
     font-family: "Asap", sans-serif;
@@ -199,6 +226,17 @@
     color: rgb(135, 106, 151);
     border: 0;
   }
+.buttonLable{
+  width: 104px;
+    height: 18px;
+    position: relative;
+    font-size: 0.9em;
+    background: linear-gradient(21deg, #fff, #fbfffe);
+    padding: 3px;
+    display: inline-block;
+    border-radius: 9999em;
+    color: rgb(135, 106, 151);
+    }
 
   .movie_desc >button{
     font-family: "Asap", sans-serif;
@@ -206,3 +244,45 @@
     color: rgb(135, 106, 151);
     border: 10;
   }
+
+.allServices {
+  position: fixed;
+  left: 7px;
+  top: 27vh;
+}
+
+.price > form:nth-child(1) > input:nth-child(1) {
+  margin-top: 60px;
+
+  }
+.movie_card .info_section .movie_desc {
+  /* padding: 25px; */
+  /* height: 50%; */
+  height: 22%;
+}
+
+.movie_card .info_section .movie_desc .description {
+  padding-left: 24px;
+}
+
+
+div.movie_card:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+  padding-right: 13px;
+}
+
+
+
+
+div.movie_card:nth-child(6) > div:nth-child(1) > div:nth-child(2) > button:nth-child(2) {
+  margin-left: 24px;
+}
+
+
+div.movie_card:nth-child(6) > div:nth-child(1) > div:nth-child(2) > button:nth-child(2) {
+  margin-left: 24px;
+}
+
+
+.Price {
+  margin-left: 24px;
+}
