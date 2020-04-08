@@ -22,10 +22,6 @@ export const WorkerService = (id) => {
   return axios.get(`${apiURL}/service/${id}`);
 }
 
-// Get all service depend on UserId and if the ServiceState is closed
-export const getAllClosedService = (id) => {
-  return axios.get(`${apiURL}/Find/All/closed/Service/${id}`);
-}
 
 // Get all service depend on UserId and if the ServiceState is Waiting
 export const getAllServiceInWaitingList = (id) => {
@@ -74,6 +70,17 @@ export const AddPriceToTheService = (req, id) => {
     }
   })
 }
+
+//Find the Service  by id and Update Stat to be OnProgress 
+export const OnProgressService = (id ,req) => {
+  return axios({
+    method: 'patch',
+    url: apiURL + `/UpdateService/${id}`,
+    data:{
+      ServiceState: 'OnProgress',
+    }
+  })
+  }
 //---------------The DELETE Request-------------------   
 // delete One Service by ServiceID
 export const deleteOneService = (id) => {
