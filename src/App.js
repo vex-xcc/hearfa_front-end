@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import apiURL from './APIconfig';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import CustomerHome from '../src/components/home/CustomerHome'
+// Components
+import "./components/login/login.css";
+import Login from './components/login/Login'
+import CustomerHeader from './components/Header/CustomerHeader'
+import WorkerHeader from './components/Header/WorkerHeader';
+import AuthComponent from './components/login/AuthenticatedComponent';
+import Register from './components/login/Register'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component {
+  render() {
+
+    return (
+      <>
+        <BrowserRouter>
+          <Switch>
+            <Route path={'/'} exact component={Login} />
+            <Route
+              path="/register"
+              render={() => <Register history={this.props.history} />}
+            />
+            <AuthComponent>
+              <Route path={'/CustomerHeader'} component={CustomerHeader} />
+              <Route path={'/WorkerHeader'} component={WorkerHeader} />
+              <Route path={'/home'} component={CustomerHome} />
+            </AuthComponent>
+          </Switch>
+        </BrowserRouter>
+      </>
+    );
+  }
 }
-
-export default App;
