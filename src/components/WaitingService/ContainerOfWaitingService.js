@@ -21,7 +21,7 @@ export default class ContainerOfWaitingService extends Component {
         })
     }
     render() {
-        let AllWaitingList = <h3> There is No Services in The WaitingList.. </h3>
+        let AllWaitingList = <h3>  </h3>
         if(this.state.WaitingList.length > 0 ){
             AllWaitingList = this.state.WaitingList.map((WaitingLists , index )=> {
             return(
