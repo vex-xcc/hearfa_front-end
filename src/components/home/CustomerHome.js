@@ -9,9 +9,19 @@ export default class CustomerHome extends Component {
       type:"",
     };
   }
+  togglehandler(){
+    this.setState({
+      toggle: !this.state.toggle
+    })
+  }
+  typehandler(type){
+    this.setState({
+      type: type
+    })
+    this.togglehandler()
+  }
 
   render() {
-    console.log(this.state.type)
     return (
 
       <>
@@ -19,11 +29,11 @@ export default class CustomerHome extends Component {
       <div>
         <div className="all">
           <div className="lefter" 
-          onClick= {}>
+          onClick= {()=>this.typehandler("Electrician") }>
             <div className="text">Electrician</div>
           </div>
           <div className="left"
-          onClick= {}>
+          onClick= {()=>this.typehandler("Plumber") }>
             <div className="text">Plumber</div>
           </div>
           <div className="center">
@@ -31,16 +41,16 @@ export default class CustomerHome extends Component {
             <div className="text">Services</div>
           </div>
           <div className="right"
-          onClick= {}>
+          onClick= {()=>this.typehandler("Painter") }>
             <div className="text">Painter</div>
           </div>
           <div className="righter"
-          onClick= {}>
+          onClick= {()=>this.typehandler("Carpenter") }>
             <div className="text">Carpenter</div>
           </div>
         </div>
       </div>    
-      : <ServiceForm />
+      : <ServiceForm tog={e=>this.togglehandler(e)}  type={this.state.type } />
       }
       </>
     )

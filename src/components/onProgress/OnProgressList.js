@@ -1,5 +1,5 @@
 import React from 'react';
-import { getRequestService, closeService } from '../api';
+import { getAllServiceInOnProgress, closeService } from '../api';
 import { getInfo } from '../login/decodeToken';
 import ProgressList from './ProgressList';
 import Swal from "sweetalert2";
