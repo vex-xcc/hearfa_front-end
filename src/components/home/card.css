@@ -261,9 +261,9 @@
   height: 22%;
 }
 
-.movie_card .info_section .movie_desc .description {
+/* .movie_card .info_section .movie_desc .description {
   padding-left: 24px;
-}
+} */
 
 
 div.movie_card:nth-child(2) > div:nth-child(1) > div:nth-child(2) {

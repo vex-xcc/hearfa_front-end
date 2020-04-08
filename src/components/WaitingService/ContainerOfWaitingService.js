@@ -14,7 +14,6 @@ export default class ContainerOfWaitingService extends Component {
         let mId = getInfo().data._id
         getAllServiceInWaitingList(mId)
         .then((res)=>{
-            console.log('res.data' , res.data )
             this.setState({WaitingList:res.data})
         })
         .catch( (error)=>{
@@ -22,10 +21,8 @@ export default class ContainerOfWaitingService extends Component {
         })
     }
     render() {
-        console.log(this.state.WaitingList)
         let AllWaitingList = <h3> There is No Services in The WaitingList.. </h3>
         if(this.state.WaitingList.length > 0 ){
-            console.log("state:",this.state.WaitingList)
             AllWaitingList = this.state.WaitingList.map((WaitingLists , index )=> {
             return(
             <WaitingService 

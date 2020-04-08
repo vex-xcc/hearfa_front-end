@@ -35,21 +35,17 @@ class Login extends Component {
         password: this.state.password
       })
       .then(res => {
-        console.warn("res", res);
         localStorage.setItem("currentUser", res.data.token);
         let jwt1 = getInfo().data.Worker;
-        if (jwt1 === true) {
-          console.log("this.props.history:", this.props);       
+        if (jwt1 === true) {       
           this.props.history.push("/WorkerHeader");
           Swal.fire(`welcome ${getInfo().data.Username}`,"",'success');
           
         } else if (jwt1 === false) {
-          console.log("B:", jwt1);
           this.props.history.push("/CustomerHeader");
           Swal.fire(`welcome ${getInfo().data.Username}`,"",'success');
 
         } else if (jwt1 === undefined) {
-          console.log("b: ", jwt1);
           this.props.history.push("/");
           Swal.fire(` ${jwt1}`,"",'error');
         }

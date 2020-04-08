@@ -18,8 +18,6 @@ export default class ListOfServices extends Component {
         let ID = getInfo().data._id
         WorkerService(ID)
        .then( (repose)=>{
-           console.log('repose.data' , )
-
              this.setState({Service:repose.data });
        })
        .catch( (error)=>{
@@ -31,7 +29,6 @@ export default class ListOfServices extends Component {
 UpdateServiceById = (id) => {
     // Make an API Call to delete a service
 
-    console.log( `Make an API Call to delete a service the ${id} `)
     WaitingService(id)
        .then((res) => {
            const Service = this.state.Service.filter((Service) => {
@@ -46,10 +43,8 @@ UpdateServiceById = (id) => {
 
 
     render(){
-        console.log(this.state.Service)
         let Service = <h3> No Service Match you're job.. </h3>
         if(this.state.Service.length > 0 ){
-            console.log("State:",this.state.Service)
             Service = this.state.Service.map((Services , index )=> {
             return(
             <WorkerHome 

@@ -23,11 +23,9 @@ export default class AllHistory extends React.Component {
         // Mack API call to get all the service of close state
         getAllClosedService(ID)
         .then( (reponse)=>{
-            console.log('getAllClosedService  == >' , reponse.data )
             this.setState({History: reponse.data})
         })
         .catch( (error)=>{
-            console.log(' API error: ',error );
         })
     }
     // Function filter and set data in History state
