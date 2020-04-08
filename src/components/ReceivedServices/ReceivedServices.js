@@ -18,7 +18,7 @@ export default class ReceivedServices extends React.Component {
         // Take the id of curretn user
         let mId = getInfo().data._id
 
-        // Mack API call 
+        // Make API call 
         getReceivedServices(mId)
             .then((reponse) => {
                 console.log('reponse.data', reponse.data)
@@ -34,7 +34,7 @@ export default class ReceivedServices extends React.Component {
 
 
     render() {
-        // virable to show when there no Services in the array 
+        // variable to show when there no Services in the array 
         let allServices = <h3> No Services! :( </h3>
  // if condtion to check the array is greater than zero return and pass the data to ReceivedService components 
         if (this.state.Emp_ReceivedServices.length > 0) {
