@@ -1,25 +1,26 @@
-import React from 'react';
-export default class ReceivedService extends React.Component {
+import React, { Component } from 'react'
 
+export default class ReceivedService extends Component {
 //display the ReceivedServices in card
     render() {
         return (
-            <div>
-
-                <li className="event">
-                    <div className="member-infos">
-                        <h1 onClick={this.ServiceClicked}>
-                            {this.props.ServiceState}
-                        </h1>
-                        <div className={`Description-${this.state.Fltir}`}>
-                        <span > {this.props.ServiceType} </span>
-                        <h2> {this.props.ServiceDescription} </h2>
-                        </div>
-                    </div>
-                </li>
-  }
+          <div className="movie_card" id="bright">
+          <div className="info_section">
+            <div className="movie_header">
+        
+              <h1>{this.props.ServiceType}</h1>
+              <p className="type">{this.props.ServiceState}</p>
             </div>
-        );
+            <div className="movie_desc">
+              <p className="description"> {this.props.ServiceDescription} </p>
+            </div>
+            <div className="movie_social">    
+              <ul>
+              </ul>
+            </div>
+          </div>
+          <div className="blur_back bright_back"></div>
+        </div>
+        )
+      }
     }
-
-}
