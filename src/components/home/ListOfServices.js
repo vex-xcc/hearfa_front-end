@@ -30,8 +30,6 @@ export default class ListOfServices extends Component {
 
 UpdateServiceById = (id) => {
     // Make an API Call to delete a service
-
-    console.log( `Make an API Call to delete a service the ${id} `)
     WaitingService(id)
        .then((res) => {
            const Service = this.state.Service.filter((Service) => {
