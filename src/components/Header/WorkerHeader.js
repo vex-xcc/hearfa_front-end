@@ -65,18 +65,18 @@ export default class WorkerHeader extends React.Component {
                   </Link>
                 </div>
                 <div id="divaa4">
-                <Link to="/WorkerHeader/HistoryServices" >
-                  <img
-                    id="img5"
-                    src={history1}
-                    alt=""/>
-                </Link>
-              </div>
-              <div id="divaa5">
                 <Link to="/WorkerHeader/WaitingService" >
                  <img
                     id="img6"
                     src={hourglass}
+                    alt=""/>
+                </Link>  
+              </div>
+              <div id="divaa5">
+              <Link to="/WorkerHeader/HistoryServices" >
+                  <img
+                    id="img5"
+                    src={history1}
                     alt=""/>
                 </Link>
               </div>
