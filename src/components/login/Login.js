@@ -38,15 +38,15 @@ class Login extends Component {
         localStorage.setItem("currentUser", res.data.token);
         let jwt1 = getInfo().data.Worker;
         if (jwt1 === true) {       
-          this.props.history.push("/WorkerHeader");
+          history.push("/WorkerHeader");
           Swal.fire(`welcome ${getInfo().data.Username}`,"",'success');
           
         } else if (jwt1 === false) {
-          this.props.history.push("/CustomerHeader");
+          history.push("/CustomerHeader");
           Swal.fire(`welcome ${getInfo().data.Username}`,"",'success');
 
         } else if (jwt1 === undefined) {
-          this.props.history.push("/");
+          history.push("/");
           Swal.fire(` ${jwt1}`,"",'error');
         }
         return res;

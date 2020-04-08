@@ -1,7 +1,5 @@
 import React from 'react';
-import apiURL from './APIconfig';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import CustomerHome from '../src/components/home/CustomerHome'
 // Components
 import "./components/login/login.css";
 import Login from './components/login/Login'
@@ -25,7 +23,6 @@ export default class App extends React.Component {
             <AuthComponent>
               <Route path={'/CustomerHeader'} component={CustomerHeader} />
               <Route path={'/WorkerHeader'} component={WorkerHeader} />
-              <Route path={'/home'} component={CustomerHome} />
             </AuthComponent>
           </Switch>
         </BrowserRouter>
