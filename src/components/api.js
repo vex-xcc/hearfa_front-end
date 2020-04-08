@@ -32,7 +32,16 @@ export const closeService = (id) => {
       }
     })
   }  
-
+//update the ServiceState to OnProgress state
+export const OnProgressService = (id ,req) => {
+  return axios({
+    method: 'patch',
+    url: apiURL + `/UpdateService/${id}`,
+    data:{
+      ServiceState: 'OnProgress',
+    }
+  })
+  }
 
 //---------------The DELETE Request-------------------   
  // delete One Service by ServiceID
