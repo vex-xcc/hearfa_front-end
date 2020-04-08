@@ -25,17 +25,14 @@ export default class WorkerHome extends React.Component {
     // Make an axios Call to Add Price To The Selected Service 
     AddPriceToTheService(newPrice, this.props.id)
       .then((res) => {
-        console.log("you're Price has been added successfully")
       })
       .catch((err) => {
-        console.log("API ERROR: ", err);
       })
   }
 
 
   UpdateClick = (e) => {
     e.preventDefault();
-    console.log(`the ${this.props.id}Service  delet Click `)
     this.props.UpdateServiceById(this.props.id)
   }
 
@@ -44,7 +41,6 @@ export default class WorkerHome extends React.Component {
       ServicePrice: this.state.ServicePrice,
       ServicesEmp: this.state.ServicesEmp
     };
-    console.log(" addNewPrice ==> ", addNewPrice);
     e.preventDefault();
     this.AddPriceToTheSelectedService(addNewPrice);
     this.props.UpdateServiceById(this.props.id);
@@ -86,7 +82,7 @@ export default class WorkerHome extends React.Component {
                     <span></span>
                   </span>
                   <span className="input">
-                    <button type="submit" placeholder="Add Price to the service">submit</button>
+                    <button type="submit">submit</button>
                     <span></span>
                   </span>
                   </form>

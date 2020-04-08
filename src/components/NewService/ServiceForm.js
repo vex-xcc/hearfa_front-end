@@ -23,7 +23,7 @@ export default class ServiceForm extends React.Component {
         // An API request to add a Service to the customer by the id
         AddNewService(info, id)
             .then(response => {
-                Swal.fire(`The Service of customer ${getInfo().data.Username} has been added successfully.`);
+                Swal.fire(`The Service of customer ${getInfo().data.Username} has been added successfully.`,"","success");
             })
             .catch(error => {
                 console.log("API ERROR: ", error);

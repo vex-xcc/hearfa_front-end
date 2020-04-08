@@ -9,7 +9,7 @@ import profile from "../../images/profile.png";
 import share from "../../images/share.png";
 import history1 from"../../images/history.png";
 import hourglass from"../../images/hourglass.png";
-import logOutIcon from"../../images/logout.png";
+import logout from"../../images/logout.png";
 import AllHistory from '../History/AllHistory';
 import ContainerOfWaitingService from '../WaitingService/ContainerOfWaitingService'
 export default class WorkerHeader extends React.Component {
@@ -84,7 +84,7 @@ export default class WorkerHeader extends React.Component {
                   <Link onClick={e => this.logOut(e)}>
                     <img
                       id="img4"
-                      src={logOutIcon}
+                      src={logout}
                       alt="" />
                   </Link>
                 </div>
