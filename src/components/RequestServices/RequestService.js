@@ -13,9 +13,7 @@ export default class RequestService extends React.Component{
   // To display or not the Service Worker info 
    ServicesClicked = (e) => {
     e.preventDefault();
-    console.log("Service Worker info..")
         this.setState({ toggle:! this.state.toggle }); 
-        console.log("this.props.AllPrice.ServicesEmp" ,this.props.AllPrice)
         this.getWorkerDataByID(this.props.workerId.ServicesEmp)
 }
 
@@ -32,11 +30,9 @@ getWorkerDataByID = (id) => {
   // Make an API Call to get the worker info 
   userInfo(id)
         .then( (reponse)=>{
-            console.log('workerInfo ==> reponse.data ===> ' , reponse.data )
             this.setState( {workerInfo: reponse.data} )
         })
         .catch( (error)=>{
-            console.log(' API error: ',error );
         })
 }
   render(){
