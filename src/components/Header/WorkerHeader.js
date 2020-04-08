@@ -3,13 +3,13 @@ import React from "react";
 import "./header.css";
 import { getInfo } from "../login/decodeToken";
 import ReceivedServices from "../ReceivedServices/ReceivedServices";
-import { Route, BrowserRouter, Link } from "react-router-dom";
+import { Route, BrowserRouter, Link,Switch } from "react-router-dom";
 import ListOfServices from "../home/ListOfServices";
 import profile from "../../images/profile.png";
 import share from "../../images/share.png";
 import history1 from"../../images/history.png";
 import hourglass from"../../images/hourglass.png";
-import logout from"../../images/logout.png";
+import logOutIcon from"../../images/logout.png";
 import AllHistory from '../History/AllHistory';
 import ContainerOfWaitingService from '../WaitingService/ContainerOfWaitingService'
 export default class WorkerHeader extends React.Component {
@@ -84,7 +84,7 @@ export default class WorkerHeader extends React.Component {
                   <Link onClick={e => this.logOut(e)}>
                     <img
                       id="img4"
-                      src={logout}
+                      src={logOutIcon}
                       alt="" />
                   </Link>
                 </div>
