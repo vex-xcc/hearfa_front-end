@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hearfa_front-end/precache-manifest.44f5596a7dd0d61ffb9ed82034b99f6d.js"
+  "/hearfa_front-end/precache-manifest.548faa5cae6fd14aa157e55c8b0fd0f3.js"
 );
 
 self.addEventListener('message', (event) => {
