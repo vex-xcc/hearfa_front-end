@@ -11,7 +11,6 @@ The fact that the program is available and ensures that you can start using it i
 
 project demo
 [Visit Website](https://vex-xcc.github.io/hearfa_front-end)
-<img src="QRcode.png" width="100" height="100">
 
 ___
 - List of Technologies used :
@@ -42,7 +41,7 @@ ___
 - Live chat.
 - More responsive UI.
 
-
+<img src="QRcode.png" width="100" height="100">
 
 
 
