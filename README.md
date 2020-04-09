@@ -6,10 +6,12 @@ Actuality these days with coronavirus stop a lot of business,some of them are a 
 
 The fact that the program is available and ensures that you can start using it immediately, and we believe that we have valuable suggestions that you can start and give you return on investment immediately, and this helps you to assign orders much more effciently, and get in touch with our support team to improve the strength the work.
 
-[Project Document](Hearfa.pdf)
+[Project Document](Hearfa.pdf) 
+
 [Project video](https://www.youtube.com/watch?v=H_CI3yEDGTQ)
 
 project demo
+
 [Visit Website](https://vex-xcc.github.io/hearfa_front-end)
 
 ___
