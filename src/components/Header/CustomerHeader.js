@@ -19,7 +19,7 @@ export default class CustomerHeader extends React.Component {
 
   logOut = (e) => {
     e.preventDefault();
-    this.props.history.push("/hearfa_front-end");
+    this.props.history.push("");
     localStorage.clear("currentUser");
   };
   render() {
