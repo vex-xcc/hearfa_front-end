@@ -1,68 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+![Hearfa](/logo.png)
+___
+<!-- **Note: !** -->
+Actuality these days with coronavirus stop a lot of business,some of them are a government, company, or even citizens.And their the hence of program idea started, Which is communicate on more than one side through one platform, And where the completion of operations faster and easier
 
-In the project directory, you can run:
+The fact that the program is available and ensures that you can start using it immediately, and we believe that we have valuable suggestions that you can start and give you return on investment immediately, and this helps you to assign orders much more effciently, and get in touch with our support team to improve the strength the work.
 
-### `npm start`
+Project demo
+- [Project Document](Hearfa.pdf) 
+- [Project video](https://www.youtube.com/watch?v=H_CI3yEDGTQ)
+- [Visit Website](https://vex-xcc.github.io/hearfa_front-end)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+___
+- List of Technologies used :
+  - Zoom
+  - React App
+  - React-router-dom
+  - Axios
+  - Local Storage
+  - Bootstrap
+  - Express
+  - Mongoose
+  - Passpor
+  - Bcrypt
+  - jwt
+  - jwt-decode
+  - Heroku
+  - SweetAlert
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `npm test`
+#### References
+- [API Docs](https://mongoosejs.com/docs/api.html)
+- [SweetAlert](https://sweetalert.js.org/guides/)
+- [Wireframes](https://www.draw.io/)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+#### futeur work :
+- As an customer, Able to uplode files to the services.
+- Live chat.
+- More responsive UI.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="QRcode.png" width="100" height="100">
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
