@@ -21,7 +21,7 @@ export default class WorkerHeader extends React.Component {
 // logout function 
   logOut = e => {
     e.preventDefault();
-    this.props.history.push('/')
+    this.props.history.push('/hearfa_front-end')
     localStorage.clear('currentUser')
   }
 //nav bar and link to another component
