@@ -37,7 +37,7 @@ class Login extends Component {
       .then(res => {
         localStorage.setItem("currentUser", res.data.token);
         let jwt1 = getInfo().data.Worker;
-        if (jwt1 === true) {       
+        if (jwt1 === true) {
           history.push("/WorkerHeader");
           Swal.fire(`welcome ${getInfo().data.Username}`,"",'success');
           
