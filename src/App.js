@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, HashRouter } from 'react-router-dom';
 // Components
 import "./components/login/login.css";
 import Login from './components/login/Login'
@@ -13,7 +13,7 @@ export default class App extends React.Component {
 
     return (
       <>
-        <BrowserRouter>
+      <HashRouter  basename="/hearfa_front-end">
           <Switch>
             <Route path={'/hearfa_front-end'} exact component={Login} />
             <Route
@@ -25,7 +25,7 @@ export default class App extends React.Component {
               <Route path={'/WorkerHeader'} component={WorkerHeader} />
             </AuthComponent>
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
       </>
     );
   }
